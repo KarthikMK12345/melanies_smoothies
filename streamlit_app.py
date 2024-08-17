@@ -27,7 +27,7 @@ ingredients_string=''
 if ingredient_list:#INGREDIENTS
     
     for fruit_chosen in ingredient_list:
-             ingredients_string+=each_fruit+' '
+             ingredients_string+=fruit_chosen+' '
              fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
              fv_df=st.dataframe(data=fruityvice_response.json(),use_container_width=True)
 
